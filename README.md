@@ -1,17 +1,23 @@
 ## CampusNavigation
-Mapped my college campus using the Folium library with **OpenStreetMap**’s API for interactive visualization.
+An interactive campus navigation system built using OpenStreetMaps and Python's Folium library. This project allows users to view a mapped layout of university buildings and find the shortest path between two selected buildings.
 
+Features:
+- Interactive Map: Displays a detailed map of the university campus with accurately marked buildings.
+- Shortest Path Finder: Allows users to search for the shortest route between any two buildings on campus.
+- Custom Layers: Overlays building locations and paths on OpenStreetMaps using GeoJSON and coordinates.
+- User-Friendly Interface: Easily select starting and destination points with real-time updates on the shortest path.
 
-Integrated and uploaded precise coordinates for over 20 campus landmarks using CSV files, ensuring comprehensive coverage and accuracy of the navigation system.
+Technologies Used:
+- OpenStreetMaps: Provides the map base layer for the campus layout.
+- Folium: Used to create and style interactive maps.
+- GeoJSON: For marking building locations and paths with coordinate-based layers.
+- Python: Backend scripting to process locations, paths, and handle map rendering.
 
-## Output v1
-![Alt Text](output0.png)
+How It Works:
+- Mapping Buildings: Used Google Maps and Google Earth to get exact coordinates of campus buildings.
+- GeoJSON for Marking: Applied GeoJSON to create CSV files for layering building locations on OpenStreetMaps.
+- Pathfinding: Predefined paths allow users to view the shortest route as a dynamic, dotted line on the map.
 
-## Output v2
-![Alt Text](output1.png)
-
-## Output v3
-![Alt Text](output2.png)
-
-## Output v4
-![Alt Text](output3.png)
+Future Enhancements:
+- Add real-time GPS tracking for dynamic navigation.
+- Integrate with mobile devices for on-the-go navigation.
